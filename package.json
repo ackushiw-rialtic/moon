@@ -13,9 +13,6 @@
   ],
   "main": "./dist/moon.umd.js",
   "module": "./dist/moon.es.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ackushiw-riatlic"
-  },
   "exports": {
     ".": {
       "import": "./dist/moon.es.js",

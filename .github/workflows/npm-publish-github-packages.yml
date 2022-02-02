@@ -64,6 +64,5 @@ jobs:
         registry-url: https://npm.pkg.github.com/
         scope: "@${{ github.repository_owner }}"
     - run: echo "registry=https://npm.pkg.github.com/@${{ github.repository_owner }}" >> .npmrc
+    - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
     - run: yarn publish $(ls *.tgz)
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
