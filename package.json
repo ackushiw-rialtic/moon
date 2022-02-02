@@ -1,11 +1,11 @@
 {
-  "name": "@ackushiw-riatlic/moon",
+  "name": "moon",
   "version": "0.1.17",
   "description": "🌙 A lightweight Vue 3 component library",
   "repository": {
     "type": "git",
     "url": "git://github.com/ackushiw-riatlic/moon.git",
-    "directory": "moon"
+    "directory": "@ackushiw-riatlic/moon"
   },
   "license": "MIT",
   "files": [
