@@ -5,7 +5,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ackushiw-riatlic/moon.git",
-    "directory": "@ackushiw-riatlic/moon"
+    "directory": "moon"
   },
   "license": "MIT",
   "files": [
