@@ -50,7 +50,7 @@ jobs:
     name: "Publish to GitHub Packages"
     needs: [package]
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'ackushiw-rialtic' # && github.token != ''
+    if: ${{ github.repository_owner == 'ackushiw-rialtic' }} # && github.token != ''
     steps:
     - name: Upload
       uses: actions/download-artifact@v2
@@ -60,8 +60,8 @@ jobs:
       with:
         node-version: 16
         registry-url: https://npm.pkg.github.com/
-        scope: "@ackushiw-rialtic"
-    - run: echo "registry=https://npm.pkg.github.com/@ackushiw-rialtic" >> .npmrc
+        scope: "@${{ github.repository_owner }}"
+    - run: echo "registry=https://npm.pkg.github.com/@${{ github.repository_owner }}" >> .npmrc
     - run: yarn publish $(ls *.tgz)
       env:
-        NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
