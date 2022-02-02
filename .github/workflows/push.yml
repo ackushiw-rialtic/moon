@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 16
       - name: Conventional Commits Version Bump
-          uses: soamee/gh-action-conventional-commits@v8.0.3
+        uses: soamee/gh-action-conventional-commits@v8.0.3
         with:
           tag-prefix: ''
         env:
