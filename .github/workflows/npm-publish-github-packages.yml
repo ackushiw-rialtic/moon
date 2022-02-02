@@ -1,7 +1,7 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
-name: Node.js Package
+name: Publish Package to GitHub
 
 on:
   release:
@@ -40,7 +40,7 @@ jobs:
       - run: yarn build:library
       # - run: npm version prerelease --preid=ci-$GITHUB_RUN_ID --no-git-tag-version
       - run: yarn pack
-      - name: Upload
+      - name: Upload package
         uses: actions/upload-artifact@v2
         with:
             name: package
@@ -53,7 +53,8 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'ackushiw-rialtic' }} # && github.token != ''
     steps:
-    - name: Upload
+    - uses: actions/checkout@v2
+    - name: Download package
       uses: actions/download-artifact@v2
       with:
           name: package
