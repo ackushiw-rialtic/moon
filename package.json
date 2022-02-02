@@ -4,7 +4,7 @@
   "description": "🌙 A lightweight Vue 3 component library",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:ackushiw-riatlic/moon.git",
+    "url": "git://github.com/ackushiw-riatlic/moon.git",
     "directory": "@ackushiw-riatlic/moon"
   },
   "license": "MIT",
