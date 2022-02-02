@@ -1,6 +1,6 @@
 {
   "name": "@ackushiw-riatlic/moon",
-  "version": "0.4.1",
+  "version": "0.1.0",
   "description": "🌙 A lightweight Vue 3 component library",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "serve": "vitepress serve docs",
     "build:library": "vite build",
     "analyze": "vite build --config analyze.config.js",
-    "publish:library": "npm publish --access public",
+    "publish:library": "yarn publish",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "format": "prettier .  --write"
   },
