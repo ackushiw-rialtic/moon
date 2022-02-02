@@ -4,8 +4,8 @@
   "description": "🌙 A lightweight Vue 3 component library",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:ackushiw-riatlic//moon.git",
-    "directory": "@ackushiw-riatlic//moon"
+    "url": "ssh://git@github.com:ackushiw-riatlic/moon.git",
+    "directory": "@ackushiw-riatlic/moon"
   },
   "license": "MIT",
   "files": [
@@ -14,7 +14,7 @@
   "main": "./dist/moon.umd.js",
   "module": "./dist/moon.es.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/your_username"
+    "registry": "https://npm.pkg.github.com/ackushiw-riatlic"
   },
   "exports": {
     ".": {
