@@ -24,9 +24,9 @@ jobs:
 # Reference https://github.com/aaronpowell/react-foldable/blob/main/.github/workflows/build.yml
 # https://www.aaron-powell.com/posts/2020-11-06-deploy-to-github-packages-with-github-actions/
   package:
-    defaults:
-      run:
-        working-directory: react-foldable
+    # defaults:
+    #   run:
+    #     working-directory: react-foldable
     needs: [build]
     runs-on: ubuntu-latest
     steps:
