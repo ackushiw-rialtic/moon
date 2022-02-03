@@ -1,11 +1,15 @@
 {
   "name": "@ackushiw-rialtic/moon",
-  "version": "0.1.19",
+  "version": "0.1.18",
   "description": "🌙 A lightweight Vue 3 component library",
+  "owner": "",
   "repository": {
     "type": "git",
     "url": "git://github.com/ackushiw-riatlic/moon.git",
     "directory": "@ackushiw-riatlic/moon"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "files": [
